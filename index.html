@@ -5,242 +5,125 @@
   <title>Price List</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      background: #fafafa;
-      font-family: 'Roboto', Arial, 'Poppins', 'Century Gothic', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 32px auto;
-      background: #fff;
-      padding: 32px;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    }
-    h1 {
-      color: #0b5394;
-      font-family: 'Poppins', Arial, sans-serif;
-      font-size: 2.5em;
-      font-weight: bold;
-      border-bottom: 3px solid #0b5394;
-      margin-bottom: 0.6em;
-      padding-bottom: 0.2em;
-      letter-spacing: 1px;
-    }
-    .subtitle {
-      color: #0b5394;
-      font-size: 1.3em;
-      font-weight: bold;
-      margin-bottom: 0.2em;
-      font-family: 'Roboto', Arial, sans-serif;
-    }
-    .warning {
-      font-size: 1em;
-      color: #ff0000;
-      margin-top: 0.2em;
-      margin-bottom: 1.2em;
-      display: block;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 2em;
-      background: #fff;
-    }
-    th, td {
-      padding: 8px 12px;
-      text-align: left;
-      font-size: 1em;
-      border-bottom: 1px solid #eee;
-      white-space: nowrap;
-    }
-    th {
-      background: #fff;
-      color: #434343;
-      font-weight: bold;
-      font-size: 1.1em;
-      font-family: 'Roboto', Arial, sans-serif;
-    }
-    .section {
-      font-size: 1.3em;
-      color: #434343;
-      font-weight: bold;
-      font-family: 'Roboto', Arial, sans-serif;
-      border-bottom: 2px solid #434343;
-      background: #fff;
-      padding: 8px;
-      margin-top: 2em;
-    }
-    .category {
-      font-size: 1.2em;
-      color: #434343;
-      font-weight: bold;
-      border-bottom: 2px solid #434343;
-      background: #fff;
-      padding: 8px;
-      margin-top: 2em;
-      margin-bottom: 0;
-    }
-    .price {
-      color: #0b5394;
-      font-weight: bold;
-      font-size: 1em;
-      font-family: 'Roboto', Arial, sans-serif;
-    }
-    .note {
-      color: #434343;
-      font-size: 0.95em;
-      font-family: 'Roboto', Arial, sans-serif;
-    }
-    @media (max-width: 800px) {
-      .container { padding: 8px; }
+    body { font-family: Arial, sans-serif; background: #fafafa; margin: 0; padding: 0; }
+    .container { max-width: 1100px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+    h1, h2 { color: #0b5394; margin-top: 1em; }
+    .subtitle { font-size: 1.1em; color: #ff0000; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+    th, td { border: 1px solid #e0e0e0; padding: 0.5em; text-align: left; }
+    th { background: #f4f7fa; }
+    tr.category th { background: #434343; color: #fff; font-size: 1.2em; text-align: left; }
+    tr.category td { background: #434343; color: #fff; font-size: 1.2em; }
+    .n/a { color: #bbb; }
+    @media (max-width: 700px) {
+      .container { padding: 0.5em; }
       table, th, td { font-size: 0.9em; }
-      h1 { font-size: 1.5em; }
-      .section, .category { font-size: 1em; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Prices</h1>
-    <span class="warning">(SUBJECT TO CHANGE AT ANY GIVEN TIME. IF YOU ARE UNSURE PLEASE CALL ALAN)</span>
-    
-    <div class="section">Canvases</div>
+    <h1>Prices <span class="subtitle">(SUBJECT TO CHANGE AT ANY GIVEN TIME. IF YOU ARE UNSURE PLEASE CALL ALAN)</span></h1>
     <table>
-      <tr><th>Type / Size</th><th>Price</th></tr>
-      <tr><td>Thick 24x36</td><td class="price">$60</td></tr>
-      <tr><td>Thick 24x20</td><td class="price">$39.99</td></tr>
-      <tr><td>Thick 18x24</td><td class="price">$20.99</td></tr>
-      <tr><td>Thick 12x24</td><td class="price">$20.99</td></tr>
-      <tr><td>Thick 16x20</td><td class="price">$16.99</td></tr>
-      <tr><td>Thick 12x16</td><td class="price">$13.99</td></tr>
-      <tr><td>Thick 14x11</td><td class="price">$12.99</td></tr>
-      <tr><td>Thick 12x12</td><td class="price">$9.99</td></tr>
-      <tr><td>Thin 24x36</td><td class="price">$39.99</td></tr>
-      <tr><td>Thin 18x24</td><td class="price">$24.99</td></tr>
-      <tr><td>Thin 16x20</td><td class="price">$18.99</td></tr>
-      <tr><td>Thin 18x14</td><td class="price">N/A</td></tr>
-      <tr><td>Thin 14x11</td><td class="price">$12.99</td></tr>
-      <tr><td>Thin 12x16</td><td class="price">$16.99</td></tr>
-      <tr><td>Thin 12x9</td><td class="price">$12.99</td></tr>
-      <tr><td>Thin 8x10</td><td class="price">$10.99</td></tr>
-    </table>
-
-    <div class="section">Acrylics</div>
-    <table>
-      <tr><th>Size</th><th>Price</th></tr>
-      <tr><td>24x36</td><td class="price">$130</td></tr>
-      <tr><td>18x24</td><td class="price">$85</td></tr>
-      <tr><td>16x20</td><td class="price">$75</td></tr>
-      <tr><td>11x17</td><td class="price">$60</td></tr>
-      <tr><td>12x12</td><td class="price">$50</td></tr>
-      <tr><td>12x11</td><td class="price">N/A</td></tr>
-      <tr><td>6x7</td><td class="price">N/A</td></tr>
-      <tr><td>7x4</td><td class="price">$15.99</td></tr>
-      <tr><td>Small Black Mount</td><td class="price">$9.99</td></tr>
-      <tr><td>Small Round Mount</td><td class="price">$9.99</td></tr>
-      <tr><td>Large Round Mount</td><td class="price">$14.99</td></tr>
-    </table>
-
-    <div class="section">Fat Heads</div>
-    <table>
-      <tr><th>Size</th><th>Price</th></tr>
-      <tr><td>8.5x11</td><td class="price">$4.99</td></tr>
-      <tr><td>11x17</td><td class="price">$8.99</td></tr>
-      <tr><td>20x30</td><td class="price">$28.99</td></tr>
-      <tr><td>24x36</td><td class="price">$39.99</td></tr>
-      <tr><td>24x36 Yardsign</td><td class="price">$34.99</td></tr>
-    </table>
-
-    <div class="section">Frames</div>
-    <table>
-      <tr><th>Size</th><th>Price</th></tr>
-      <tr><td>8x10</td><td class="price">$15.99</td></tr>
-      <tr><td>8.5x11</td><td class="price">$19.99</td></tr>
-      <tr><td>11x14</td><td class="price">$29.99</td></tr>
-      <tr><td>11x17</td><td class="price">$39.99</td></tr>
-      <tr><td>24x24</td><td class="price">$80</td></tr>
-    </table>
-
-    <div class="section">Foamboards</div>
-    <table>
-      <tr><th>Size</th><th>Price</th></tr>
-      <tr><td>24x36</td><td class="price">$30.99</td></tr>
-      <tr><td>20x30</td><td class="price">$19.99</td></tr>
-      <tr><td>16x20</td><td class="price">$15.99</td></tr>
-    </table>
-
-    <div class="section">Chloroplast</div>
-    <table>
-      <tr><th>Type / Size</th><th>Price</th></tr>
-      <tr><td>24x36</td><td class="price">$29.99</td></tr>
-      <tr><td>18x24 Single-Side</td><td class="price">$15.99</td></tr>
-      <tr><td>18x24 Double-Side</td><td class="price">$19.99</td></tr>
-      <tr><td>Cutout</td><td class="price">$34.99</td></tr>
-      <tr><td>Metal Stand</td><td class="price">$29.99</td></tr>
-    </table>
-
-    <div class="section">Puzzles</div>
-    <table>
-      <tr><th>Size</th><th>Price</th></tr>
-      <tr><td>10x12</td><td class="price">$12.99</td></tr>
-      <tr><td>15x11</td><td class="price">$16.99</td></tr>
-    </table>
-
-    <div class="section">Bookmarks</div>
-    <table>
-      <tr><th>Type</th><th>Price</th></tr>
-      <tr><td>Single-Sided</td><td class="price">$4.99</td></tr>
-      <tr><td>Double-Sided</td><td class="price">$7.99</td></tr>
-    </table>
-
-    <div class="section">License Plate</div>
-    <table>
-      <tr><th>Size</th><th>Price</th></tr>
-      <tr><td>12x6</td><td class="price">$15.99</td></tr>
-    </table>
-
-    <div class="section">Coasters</div>
-    <table>
-      <tr><th>Type</th><th>Price</th></tr>
-      <tr><td>4" Square</td><td class="price">$4.99</td></tr>
-      <tr><td>4" Round</td><td class="price">$4.99</td></tr>
-      <tr><td>4 Pack</td><td class="price">$17.99</td></tr>
-    </table>
-
-    <div class="section">Specialty Paper</div>
-    <table>
-      <tr><th>Type</th><th>Price</th></tr>
-      <tr><td>Synthetic Paper (Plastic) (8.5x11)</td><td class="price">$</td></tr>
-      <tr><td>Synthetic Paper (Plastic) (11x17)</td><td class="price">$3.75</td></tr>
-      <tr><td>Glossy (130lb) (11x17)</td><td class="price">$</td></tr>
-      <tr><td>Resume Paper</td><td class="price">$0.40 + CC</td></tr>
-      <tr><td>Avery Stickers</td><td class="price">$1.60 + CC</td></tr>
-    </table>
-
-    <div class="section">Banners</div>
-    <table>
-      <tr><th>Type</th><th>Price</th></tr>
-      <tr><td>Thin poster paper (slidell) (B&amp;W)</td><td class="price">$0.99 per ft² + $5</td></tr>
-      <tr><td>Thin poster paper (slidell) (Color)</td><td class="price">$1.99 per ft²</td></tr>
-      <tr><td>Banner</td><td class="price">$4.99 per ft²</td></tr>
-      <tr><td>Sticker</td><td class="price">$4.99 per ft² + $14.99</td></tr>
-      <tr><td>Glossy Poster paper</td><td class="price">$3.99 per ft²</td></tr>
-    </table>
-
-    <div class="section">Miscellaneous</div>
-    <table>
-      <tr><th>Item</th><th>Price</th></tr>
-      <tr><td>Mouse Pad</td><td class="price">$10.99</td></tr>
-      <tr><td>Greeting Card</td><td class="price">$2.99</td></tr>
-      <tr><td>IDs</td><td class="price">$4.99</td></tr>
-      <tr><td>2" Round magnets</td><td class="price">$3.99</td></tr>
-      <tr><td>2" Button</td><td class="price">$3.99</td></tr>
-      <tr><td>Ornaments (Clear &amp; White)</td><td class="price">$6.99</td></tr>
-      <tr><td>10x7 metal sign</td><td class="price">$19.99</td></tr>
-      <tr><td>Email</td><td class="price">$1.75 <span class="note">(DO NOT CHARGE IF OVER $10)</span></td></tr>
+      <tbody>
+        <!-- Canvases -->
+        <tr class="category"><th colspan="2">Canvases</th></tr>
+        <tr><td>Thick 24x36</td><td>$60</td></tr>
+        <tr><td>Thick 24x20</td><td>$39.99</td></tr>
+        <tr><td>Thick 18x24</td><td>$20.99</td></tr>
+        <tr><td>Thick 12x24</td><td>$20.99</td></tr>
+        <tr><td>Thick 16x20</td><td>$16.99</td></tr>
+        <tr><td>Thick 12x16</td><td>$13.99</td></tr>
+        <tr><td>Thick 14x11</td><td>$12.99</td></tr>
+        <tr><td>Thick 12x12</td><td>$9.99</td></tr>
+        <tr><td>Thin 24x36</td><td>$39.99</td></tr>
+        <tr><td>Thin 18x24</td><td>$24.99</td></tr>
+        <tr><td>Thin 16x20</td><td>$18.99</td></tr>
+        <tr><td>Thin 18x14</td><td class="n/a">N/A</td></tr>
+        <tr><td>Thin 14x11</td><td>$12.99</td></tr>
+        <tr><td>Thin 12x16</td><td>$16.99</td></tr>
+        <tr><td>Thin 12x9</td><td>$12.99</td></tr>
+        <tr><td>Thin 8x10</td><td>$10.99</td></tr>
+        <!-- Acrylics -->
+        <tr class="category"><th colspan="2">Acrylics</th></tr>
+        <tr><td>24x36</td><td>$130</td></tr>
+        <tr><td>18x24</td><td>$85</td></tr>
+        <tr><td>16x20</td><td>$75</td></tr>
+        <tr><td>11x17</td><td>$60</td></tr>
+        <tr><td>12x12</td><td>$50</td></tr>
+        <tr><td>12x11</td><td class="n/a">N/A</td></tr>
+        <tr><td>6x7</td><td class="n/a">N/A</td></tr>
+        <tr><td>7x4</td><td>$15.99</td></tr>
+        <tr><td>Small Black Mount</td><td>$9.99</td></tr>
+        <tr><td>Small Round Mount</td><td>$9.99</td></tr>
+        <tr><td>Large Round Mount</td><td>$14.99</td></tr>
+        <!-- Fat Heads -->
+        <tr class="category"><th colspan="2">Fat Heads</th></tr>
+        <tr><td>8.5x11</td><td>$4.99</td></tr>
+        <tr><td>11x17</td><td>$8.99</td></tr>
+        <tr><td>20x30</td><td>$28.99</td></tr>
+        <tr><td>24x36</td><td>$39.99</td></tr>
+        <tr><td>24x36 Yardsign</td><td>$34.99</td></tr>
+        <!-- Frames -->
+        <tr class="category"><th colspan="2">Frames</th></tr>
+        <tr><td>8x10</td><td>$15.99</td></tr>
+        <tr><td>8.5x11</td><td>$19.99</td></tr>
+        <tr><td>11x14</td><td>$29.99</td></tr>
+        <tr><td>11x17</td><td>$39.99</td></tr>
+        <tr><td>24x24</td><td>$80</td></tr>
+        <!-- Foamboards -->
+        <tr class="category"><th colspan="2">Foamboards</th></tr>
+        <tr><td>24x36</td><td>$30.99</td></tr>
+        <tr><td>20x30</td><td>$19.99</td></tr>
+        <tr><td>16x20</td><td>$15.99</td></tr>
+        <!-- Chloroplast -->
+        <tr class="category"><th colspan="2">Chloroplast</th></tr>
+        <tr><td>24x36</td><td>$29.99</td></tr>
+        <tr><td>18x24 Single-Side</td><td>$15.99</td></tr>
+        <tr><td>18x24 Double-Side</td><td>$19.99</td></tr>
+        <tr><td>Cutout</td><td>$34.99</td></tr>
+        <tr><td>Metal Stand</td><td>$29.99</td></tr>
+        <!-- Puzzles -->
+        <tr class="category"><th colspan="2">Puzzles</th></tr>
+        <tr><td>10x12</td><td>$12.99</td></tr>
+        <tr><td>15x11</td><td>$16.99</td></tr>
+        <!-- Bookmarks -->
+        <tr class="category"><th colspan="2">Bookmarks</th></tr>
+        <tr><td>Single-Sided</td><td>$4.99</td></tr>
+        <tr><td>Double-Sided</td><td>$7.99</td></tr>
+        <!-- License Plate -->
+        <tr class="category"><th colspan="2">License Plate</th></tr>
+        <tr><td>12x6</td><td>$15.99</td></tr>
+        <!-- Coasters -->
+        <tr class="category"><th colspan="2">Coasters</th></tr>
+        <tr><td>4" Square</td><td>$4.99</td></tr>
+        <tr><td>4" Round</td><td>$4.99</td></tr>
+        <tr><td>4 Pack</td><td>$17.99</td></tr>
+        <!-- Specialty Paper -->
+        <tr class="category"><th colspan="2">Specialty Paper</th></tr>
+        <tr><td>Synthetic Paper (Plastic) (8.5x11)</td><td>$</td></tr>
+        <tr><td>Synthetic Paper (Plastic) (11x17)</td><td>$3.75</td></tr>
+        <tr><td>Glossy (130lb) (11x17)</td><td>$</td></tr>
+        <tr><td>Resume Paper</td><td>$0.40 + CC</td></tr>
+        <tr><td>Avery Stickers</td><td>$1.60 + CC</td></tr>
+        <!-- Banners -->
+        <tr class="category"><th colspan="2">Banners</th></tr>
+        <tr><td>Thin poster paper (slidell) (B&W)</td><td>$0.99 per ft² + $5</td></tr>
+        <tr><td>Thin poster paper (slidell) (Color)</td><td>$1.99 per ft²</td></tr>
+        <tr><td>Banner</td><td>$4.99 per ft²</td></tr>
+        <tr><td>Sticker</td><td>$4.99 per ft² + $14.99</td></tr>
+        <tr><td>Glossy Poster paper</td><td>$3.99 per ft²</td></tr>
+        <!-- Miscellaneous -->
+        <tr class="category"><th colspan="2">Miscellaneous</th></tr>
+        <tr><td>Mouse Pad</td><td>$10.99</td></tr>
+        <tr><td>Greeting Card</td><td>$2.99</td></tr>
+        <tr><td>IDs</td><td>$4.99</td></tr>
+        <tr><td>2" Round magnets</td><td>$3.99</td></tr>
+        <tr><td>2" Button</td><td>$3.99</td></tr>
+        <tr><td>Ornaments (Clear & White)</td><td>$6.99</td></tr>
+        <tr><td>10x7 metal sign</td><td>$19.99</td></tr>
+        <tr><td>Email</td><td>$1.75 (DO NOT CHARGE IF OVER $10)</td></tr>
+      </tbody>
     </table>
   </div>
 </body>
